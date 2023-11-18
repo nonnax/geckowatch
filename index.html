@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Id$ nonnax 2023-11-06 19:10:47 +0800 -->
+<head>
+    <meta charset="utf-8">
+    <title>New Page</title>
+<link href="lib/c3.css" rel="stylesheet">
+
+    <style>
+      body {
+        font: 12px Arial;
+        background: Verdigris;
+      }
+      path {
+        stroke: steelblue;
+        stroke-width: 2;
+        fill: none;
+      }
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: grey;
+        stroke-width: 1;
+        shape-rendering: crispEdges;
+      }
+    </style>
+<script type="text/javascript" src="lib/d3.js"></script>
+<script type="text/javascript" src="lib/c3.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@vladocar/nanojs/src/nanoJS.min.js"></script>
+<script type="text/javascript" src="./coingecko.js"></script>
+</head>
+<body>
+<div id="chart"></div>
+<div id="chart2"></div>
+<div>
+  <label for="selector">Select:</label><br/>
+  <input type="range" name="selector", id="selector" value=0 min=0 max=7 />
+  <div id="title">Next coin</div>
+</div>
+</body>
+</html>
+
