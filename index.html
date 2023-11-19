@@ -9,7 +9,8 @@
     <style>
       body {
         font: 12px Arial;
-        background: Verdigris;
+      /*  background: Verdigris; */
+        background-color: #00275E;
       }
       path {
         stroke: steelblue;
@@ -23,19 +24,25 @@
         stroke-width: 1;
         shape-rendering: crispEdges;
       }
+      #chart svg text {
+        color: white;
+        fill: silver;
+      }
     </style>
 <script type="text/javascript" src="lib/d3.js"></script>
 <script type="text/javascript" src="lib/c3.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/@vladocar/nanojs/src/nanoJS.min.js"></script>
-<script type="text/javascript" src="./coingecko.js"></script>
+<!-- <script type="module" src="./mod.js"></script> -->
+<script src="./coingecko.js">
+</script>
 </head>
 <body>
 <div id="chart"></div>
 <div id="chart2"></div>
 <div>
   <label for="selector">Select:</label><br/>
-  <input type="range" name="selector", id="selector" value=0 min=0 max=7 />
+  <input type="range" name="selector", id="selector" value=0 min=0 max=7 autofocus />
   <div id="title">Next coin</div>
 </div>
 </body>
